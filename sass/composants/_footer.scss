@@ -1,0 +1,51 @@
+
+
+.site__footer{
+    padding: 25px;
+    display :flex;
+    color: white;
+    width: 100%;
+    
+}
+
+footer >.footer__infos{
+    flex-grow: 3;
+    margin-right: 15px;
+
+    
+
+
+}
+
+footer >.footer__nav{
+    flex-grow: 3;
+    margin-right: 15px;
+
+    
+
+
+}
+
+footer >.footer__texte{
+    flex-grow: 1;
+    margin-right: 15px;
+
+    
+
+
+}
+
+
+footer >.footer__infos > li{
+   list-style-type: none;
+   margin-bottom: 3%;
+
+    
+
+
+}
+
+
+
+
+

@@ -1,0 +1,97 @@
+.site__header{
+    display: flex;
+    flex-direction: column;
+
+
+    @media screen and(min-width : $largeur__media-tablette){
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__titres{
+            justify-content: flex-start;
+
+                h1{
+                    font-size: clamp(0.5rem, 4vw, 6rem);
+                }
+
+                h2{
+                    font-size: clamp(.5srem, 0.5vw, 3rem);
+                }
+        }
+
+        &__util{
+            display: flex;
+            align-items: center;
+            margin-right:5%;
+        }
+
+        .recherche{
+            margin-left: 20%;
+        }
+        
+
+    }
+   
+        &__titres{
+            display : flex;
+            flex: 1;
+            justify-content: center;
+            margin-left:3%;
+            padding-bottom: 1%;
+            align-items: center;
+
+
+            h1{
+                margin-right: 2%;
+                font-family: $font__header-h1;
+                font-size: clamp(1rem, 6.3vw, 10rem);
+            }
+            h2{
+                font-family: $font__header-h2;
+                font-size: clamp(.7rem, 3.5vw, 6rem);
+            }
+        }
+        
+        &__util{
+            flex: 0.45;
+           
+
+        }
+
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+
+ 
+
+    &__lien{
+        margin: 0;
+        padding: 1px;
+    }
+
+}
+
+ /**** RECHERCHE ****/
+.recherche{
+    position: relative;
+    margin-left: 1%;
+    
+    
+    &__input{
+        width: 90%;
+        
+        height: 20px;
+        color:black;
+        
+    }
+
+    &__bouton{
+        position: absolute;
+        height: 20px;
+        width: 29px;
+    }
+}
+
+

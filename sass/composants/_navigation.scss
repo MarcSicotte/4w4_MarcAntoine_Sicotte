@@ -1,0 +1,62 @@
+
+
+#chk-burger{
+    display: none;
+}
+
+#burger{
+    display: block;
+    position: absolute;
+    left: 2%;
+    transform: rotate(0deg);
+    transition: transform .3s;
+} 
+#chk-burger:checked ~ #burger{
+    transform: rotate(90deg);
+
+}
+
+#chk-burger:checked ~ .menu-principal-container{
+    display: block;
+}
+.menu-principal-container {
+    display: none;
+    padding: 30px 0 0 0;
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .menu-item {
+            padding: 0px;
+            margin: 0 0 10px 0;
+            a {
+                font-family: $font__navigation-a;
+                padding: 5px;
+                text-decoration: none;
+                &:hover{
+                    background-color: $background_link-hover;
+                    
+                }
+            }
+        }
+
+}
+
+@media screen and (min-width: $largeur__media-tablette){
+    .site__barre{
+    
+        border: solid 3px black;
+    }
+    
+    #burger{
+        display: none;
+    }
+    
+    .menu-principal-container{
+        display: block;
+    }
+
+}
+
+

@@ -1,0 +1,31 @@
+/**
+Theme name: exercice1-MarcAntoine-Sicotte
+Author : Marc-Antoine Sicotte
+Description: Exercice dans le cadre du cours 4w4
+Version: 1.0 
+Require PHP: 7.4
+License: GNU General Public License v2 later
+Text Domain: cidw-4w4
+*/
+/* -----------------------------------------------------------------
+VARIABLES
+------------------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/structure";
+@import "variables/typo";
+
+/* ---------------INITIALISATION---------- */
+@import "initialisation/_normalize";
+@import "initialisation/_boxsize";
+/* -------------------LAYOUT---------- */
+@import "layout/_layout";
+
+/* -------------------------- ELEMENTS ---------------------- */
+@import "elements/links";
+
+/* -------------------------- COMPOSANTS ---------------------- */
+@import "composants/cours";
+@import "composants/footer";
+@import "composants/navigation";
+@import "composants/entete";
+
