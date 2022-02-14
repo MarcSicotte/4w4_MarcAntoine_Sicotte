@@ -335,6 +335,10 @@ html {
 }
 
 /* -------------------LAYOUT---------- */
+html {
+  margin: 0 !important;
+}
+
 .site__header {
   grid-area: header;
 }
@@ -445,30 +449,36 @@ a:hover, a:active {
 }
 
 .site__footer {
-  padding: 25px;
-  display: flex;
-  color: white;
-  width: 100%;
+  display: none;
 }
 
-footer > .footer__infos {
-  flex-grow: 3;
-  margin-right: 15px;
-}
-
-footer > .footer__nav {
-  flex-grow: 3;
-  margin-right: 15px;
-}
-
-footer > .footer__texte {
-  flex-grow: 1;
-  margin-right: 15px;
-}
-
-footer > .footer__infos > li {
-  list-style-type: none;
-  margin-bottom: 3%;
+@media screen and (min-width: 600px) {
+  .site__footer {
+    display: block;
+    padding: 25px;
+    display: flex;
+    color: white;
+    width: 100%;
+  }
+  .site__footer__infos {
+    flex-grow: 3;
+    margin-right: 15px;
+  }
+  .site__footer__infos li {
+    list-style-type: none;
+    margin-bottom: 3%;
+  }
+  .site__footer__nav {
+    flex-grow: 3;
+    margin-right: 15px;
+  }
+  .site__footer__nav li {
+    list-style: none;
+  }
+  .site__footer__text {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
 }
 
 #chk-burger {
@@ -531,59 +541,44 @@ footer > .footer__infos > li {
 .site__header {
   display: flex;
   flex-direction: column;
+  margin-left: 15%;
 }
 
 @media screen and (min-width: 600px) {
   .site__header {
     flex-direction: row;
-    justify-content: space-between;
-  }
-  .site__header__titres {
-    justify-content: flex-start;
-  }
-  .site__header__titres h1 {
-    font-size: clamp(0.5rem, 4vw, 6rem);
-  }
-  .site__header__titres h2 {
-    font-size: clamp(0.5srem, 0.5vw, 3rem);
-  }
-  .site__header__util {
-    display: flex;
-    align-items: center;
-    margin-right: 5%;
-  }
-  .site__header .recherche {
-    margin-left: 20%;
+    margin-left: 0;
   }
 }
 
 .site__header__titres {
   display: flex;
   flex: 1;
-  justify-content: center;
-  margin-left: 3%;
-  padding-bottom: 1%;
   align-items: center;
+  margin-left: 10%;
 }
 
 .site__header__titres h1 {
-  margin-right: 2%;
+  margin-right: 1%;
   font-family: "Poppins", sans-serif;
-  font-size: clamp(1rem, 6.3vw, 10rem);
+  font-size: clamp(3rem, 5vw, 10rem);
 }
 
 .site__header__titres h2 {
   font-family: "Trebuchet MS", sans-serif;
-  font-size: clamp(0.7rem, 3.5vw, 6rem);
+  font-size: clamp(1.5rem, 2vw, 6rem);
 }
 
 .site__header__util {
-  flex: 0.45;
+  margin: auto 10%;
+}
+
+.site__header__util .icone {
+  padding-bottom: 20px;
 }
 
 .icone {
   display: flex;
-  justify-content: center;
 }
 
 .icone__lien {
@@ -594,11 +589,9 @@ footer > .footer__infos > li {
 /**** RECHERCHE ****/
 .recherche {
   position: relative;
-  margin-left: 1%;
 }
 
 .recherche__input {
-  width: 90%;
   height: 20px;
   color: black;
 }
