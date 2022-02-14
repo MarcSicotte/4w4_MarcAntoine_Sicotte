@@ -27,6 +27,10 @@
             margin-right: 15px;
             li{
                 list-style: none;
+                svg{
+                    color: $color__link__footer;
+                    margin-left: 10px;
+                }
             }
         }
 
