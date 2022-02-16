@@ -476,6 +476,23 @@ a:hover, a:active {
 
 .site__footer {
   display: none;
+  flex-direction: column;
+}
+
+.site__footer__zone1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.site__footer__zone1 .infos {
+  margin-right: 2%;
+}
+
+.site__footer__zone1 .infos li {
+  list-style-type: none;
+  padding-bottom: 1%;
 }
 
 @media screen and (min-width: 600px) {
@@ -486,28 +503,28 @@ a:hover, a:active {
     color: white;
     width: 100%;
   }
-  .site__footer__infos {
-    flex-grow: 3;
-    margin-right: 15px;
-  }
-  .site__footer__infos li {
-    list-style-type: none;
-    margin-bottom: 3%;
-  }
-  .site__footer__nav {
-    flex-grow: 3;
-    margin-right: 15px;
-  }
-  .site__footer__nav li {
+  .site__footer__menu__ul {
+    display: flex;
     list-style: none;
+    justify-content: center;
   }
-  .site__footer__nav li svg {
+  .site__footer__menu__ul .menu-item {
+    margin: 10px 5px;
+  }
+  .site__footer__menu__ul .menu-item a {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+  }
+  .site__footer__menu__ul .menu-item a svg {
+    margin-left: 5px;
     color: #7bf06c;
-    margin-left: 10px;
   }
-  .site__footer__text {
-    flex-grow: 1;
-    margin-right: 15px;
+  .site__footer__menu__ul .menu-item a:hover svg {
+    color: white;
+  }
+  .site__footer__menu__ul .menu-item a:visited svg {
+    color: #666666;
   }
 }
 

@@ -3,6 +3,31 @@
 .site__footer{
 
     display: none;
+    flex-direction: column;
+    &__zone1{ // Première partie avec les infos générals et un message.
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+        
+
+        .infos{
+        
+            margin-right: 2%;
+
+            li{
+                list-style-type: none;
+                padding-bottom: 1%;
+
+            }
+        }
+
+          
+        
+
+    }
+    
 
     @media screen and (min-width: $largeur__media-tablette){
         display: block;
@@ -11,40 +36,51 @@
         color: white;
         width: 100%;
 
-        &__infos{
-            flex-grow: 3;
-            margin-right: 15px;
+    
 
-            li{
-                list-style-type: none;
-                margin-bottom: 3%;
-
-            }
-        }
-
-        &__nav{
-            flex-grow: 3;
-            margin-right: 15px;
-            li{
+        &__menu{ // Deuxième partie avec menu secondaire.
+            &__ul{
+                display: flex;
                 list-style: none;
-                svg{
-                    color: $color__link__footer;
-                    margin-left: 10px;
+                justify-content: center;
+
+                .menu-item{
+                    margin: 10px 5px;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        padding: 3px;
+                        svg{
+                            margin-left: 5px;
+                            color: $color__link__footer;
+                        }
+                        &:hover{
+                            svg{
+                                color: $color__link__footer-hover;
+                            }
+                        }
+
+                        &:visited{
+                            svg{
+                                color: $color__link__footer-visited;
+                            }
+                        }
+                    }
                 }
             }
         }
 
-        &__text{
-            flex-grow: 1;
-            margin-right: 15px;
+            
         }
+
+        
 
             
     
     }
  
     
-}
+
 
 
 
