@@ -1,3 +1,12 @@
+<?php
+/**************************
+*
+* Gestion de la création de page descriptive d'un article (cour)
+*
+***************************/
+
+?>
+
 <?php get_header(); ?>
 <main class="site__main">
   <!--  <h1>------- single-post.php -------</h1> -->
