@@ -34,7 +34,7 @@
                 font-family: $font__navigation-a;
                 padding: 5px;
                 text-decoration: none;
-                @include links($color__link__nav, $color__link__nav-hover, $color__link__nav-visited);
+                @include links($color__link__nav, $color__link__nav-hover, $color__link__nav-visited); //Mixin des couleur du nav
                 &:hover{
                     background-color: $background_link-hover;
                     
