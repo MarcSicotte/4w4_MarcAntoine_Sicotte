@@ -377,7 +377,7 @@ html {
 /* -------------------------- ELEMENTS ---------------------- */
 a {
   display: block;
-  padding: 10px;
+  padding: 5px;
   color: #050c72;
   margin-left: 20px;
 }
@@ -400,7 +400,7 @@ a:hover, a:active {
 
 .site__footer a {
   display: block;
-  padding: 10px;
+  padding: 5px;
   color: #7bf06c;
   margin-left: 20px;
   display: block;
@@ -424,6 +424,29 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site__header__titres a {
+  display: block;
+  padding: 5px;
+  color: #050c72;
+  margin-left: 20px;
+}
+
+.site__header__titres a:visited {
+  color: #191970;
+}
+
+.site__header__titres a:hover, .site__header__titres a:focus, .site__header__titres a:active {
+  color: #800080;
+}
+
+.site__header__titres a:focus {
+  outline: thin dotted;
+}
+
+.site__header__titres a:hover, .site__header__titres a:active {
+  outline: 0;
+}
+
 /* -------------------------- COMPOSANTS ---------------------- */
 .site__main {
   display: flex;
@@ -434,12 +457,30 @@ a:hover, a:active {
   border: solid 3px black;
 }
 
+.site__main h1 {
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  margin: auto;
+  width: 100%;
+}
+
+.site__main p {
+  margin-left: 15px;
+}
+
+.site__main p .thumbnail {
+  width: 10%;
+  height: 10%;
+}
+
 .main__titre {
   font-size: 2rem;
   font-style: italic;
   width: 100%;
   display: block;
-  margin-left: 15px;
+  margin: 0 0 0 15px;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .carte {
@@ -475,6 +516,7 @@ a:hover, a:active {
 }
 
 .site__footer {
+  font-family: 'Oxygen', sans-serif;
   display: none;
   flex-direction: column;
 }
@@ -520,11 +562,11 @@ a:hover, a:active {
     margin-left: 5px;
     color: #7bf06c;
   }
-  .site__footer__menu__ul .menu-item a:hover svg {
-    color: white;
-  }
   .site__footer__menu__ul .menu-item a:visited svg {
     color: #666666;
+  }
+  .site__footer__menu__ul .menu-item a:hover svg {
+    color: white;
   }
 }
 
@@ -567,10 +609,43 @@ a:hover, a:active {
   font-family: "Trebuchet MS", sans-serif;
   padding: 5px;
   text-decoration: none;
+  display: block;
+  padding: 5px;
+  color: black;
+  margin-left: 20px;
+}
+
+.menu-principal-container .menu-item a:visited {
+  color: #666666;
+}
+
+.menu-principal-container .menu-item a:hover, .menu-principal-container .menu-item a:focus, .menu-principal-container .menu-item a:active {
+  color: #1b156d;
+}
+
+.menu-principal-container .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.menu-principal-container .menu-item a:hover, .menu-principal-container .menu-item a:active {
+  outline: 0;
 }
 
 .menu-principal-container .menu-item a:hover {
   background-color: #7bf06c;
+}
+
+.menu-principal-container .menu-item a svg {
+  margin-left: 5px;
+  color: black;
+}
+
+.menu-principal-container .menu-item a:visited svg {
+  color: #1b156d;
+}
+
+.menu-principal-container .menu-item a:hover svg {
+  color: #666666;
 }
 
 @media screen and (min-width: 600px) {
@@ -605,10 +680,17 @@ a:hover, a:active {
   margin-left: 10%;
 }
 
+.site__header__titres a {
+  display: flex;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
 .site__header__titres h1 {
   margin-right: 1%;
   font-family: "Poppins", sans-serif;
-  font-size: clamp(3rem, 5vw, 10rem);
+  font-size: clamp(3rem, 4vw, 10rem);
 }
 
 .site__header__titres h2 {
@@ -633,7 +715,19 @@ a:hover, a:active {
   padding: 1px;
 }
 
-/**** RECHERCHE ****/
+.erreur-404 {
+  background-color: black;
+  color: white;
+}
+
+.erreur-404 h1 {
+  font-size: 4rem;
+}
+
+.erreur-404 h2 {
+  font-size: 2rem;
+}
+
 .recherche {
   position: relative;
 }
@@ -647,5 +741,30 @@ a:hover, a:active {
   position: absolute;
   height: 20px;
   width: 29px;
+}
+
+.site__main-type2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #7bf06c;
+  row-gap: 20px;
+  border: solid 3px black;
+}
+
+.site__main-type2 h1 {
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.site__main-type2 .page__standard {
+  margin: 0 0 0 15px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.site__main-type2__content {
+  margin: 0 0 0 15px;
 }
 /*# sourceMappingURL=style.css.map */

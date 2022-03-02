@@ -1,0 +1,26 @@
+.site__main-type2{
+    display: flex;
+    flex-direction: column;
+    background-color: $color__background-main;
+    row-gap: 20px;
+    border: solid 3px black;
+   
+    h1{
+        background-color: black;
+        color: white;
+        font-family: $font__header-h2;
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+
+    .page__standard{
+        margin: 0 0 0 15px ;
+        font-family: 'Oxygen', sans-serif;
+    }
+
+    &__content{
+        margin: 0 0 0 15px;
+
+    }
+}

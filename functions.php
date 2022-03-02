@@ -39,4 +39,7 @@ function cidw_4w4_filtre_le_menu($mon_objet){
 
 add_filter("wp_nav_menu_objects", "cidw_4w4_filtre_le_menu");
 
+/******************************* les supports du thème *********************/
+add_theme_support('post-thumbnails');
 ?>
+

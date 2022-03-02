@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="site__main">
-    <h1>-------------------------------------Category-------------------------------------</h1>
-<h2 class="main__titre">Liste des cours</h2>
+    <!--<h1>-------------------------------------Category-------------------------------------</h1>-->
+<h1>Liste des cours</h2>
     <?php if (have_posts()): ?>
         <?php while (have_posts()): the_post(); ?>
         <?php
@@ -12,8 +12,13 @@
             $ma_duree = substr($mon_titre,strrpos($mon_titre,'('));
         ?>
             <section class="carte">
-                <h3 class="carte__titre"><?php echo $mon_titre_filtre ?></h3>
+                <?php the_post_thumbnail("thumbnail"); ?>
+                <h3 class="carte__titre">
+                    
+                   <a href="<?php echo get_permalink(); ?>"><?php echo $mon_titre_filtre ?></a> 
+                </h3>
                 <p class="carte__contenu"><?php echo the_excerpt(); ?></p>
+                
             </section>     
         <?php endwhile ?>
     <?php endif ?>

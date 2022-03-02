@@ -5,13 +5,30 @@
     justify-content: space-evenly;
     row-gap: 20px;
     border: solid 3px black;
+    h1{
+        background-color: black;
+        color: white;
+        font-family: $font__header-h2;
+        margin: auto;
+        width: 100%;
+        
+    }
+
+    p{
+        margin-left: 15px;
+        .thumbnail{
+            width: 10%;
+            height: 10%;
+        }
+    }
 }
 .main__titre {
     font-size: 2rem;
     font-style: italic;
     width: 100%;
     display: block;
-    margin-left: 15px ;
+    margin: 0 0 0 15px ;
+    font-family: 'Oxygen', sans-serif;
 
 }
 .carte {

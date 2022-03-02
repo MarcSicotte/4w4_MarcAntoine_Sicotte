@@ -3,6 +3,7 @@ $color__background-header:  rgb(209, 207, 197);
 $color__background-footer:  rgb(20, 20, 20);
 $color__background-main:  rgb(123, 240, 108);
 $color__background-barre:  rgb(209, 207, 197);
+$color__background-404: rgb(0, 0, 0);
 // liens
 $color__link: #050c72; //royalblue
 $color__link-visited: #800080; //purple
@@ -13,4 +14,10 @@ $background_link-hover:   rgb(123, 240, 108);
 //liens footer
 $color__link__footer:  rgb(123, 240, 108); 
 $color__link__footer-visited: rgb(102, 102, 102);
-$color__link__footer-hover: rgb(255, 255, 255);; //midnightblue
+$color__link__footer-hover: rgb(255, 255, 255);
+
+
+//liens nav 
+$color__link__nav: rgb(0, 0, 0);
+$color__link__nav-visited: rgb(27, 21, 109);
+$color__link__nav-hover: rgb(102, 102, 102);

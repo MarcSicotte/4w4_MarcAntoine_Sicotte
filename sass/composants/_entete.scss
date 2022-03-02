@@ -17,13 +17,19 @@
             flex: 1;
             align-items: center;
             margin-left: 10%;
-
+            
+            a{
+                display: flex;
+                text-decoration: none;
+                margin: 0 10px 0 0;
+                padding: 0;
+            }
 
             h1{
                
                 margin-right: 1%;
                 font-family: $font__header-h1;
-                font-size: clamp(3rem, 5vw, 10rem);
+                font-size: clamp(3rem, 4vw, 10rem);
             }
             h2{
                 font-family: $font__header-h2;
@@ -58,25 +64,8 @@
 
 }
 
- /**** RECHERCHE ****/
-.recherche{
-    position: relative;
-    
-    
-    &__input{
-        
-        
-        height: 20px;
-        color:black;
-        
-    }
 
-    &__bouton{
-        position: absolute;
-        height: 20px;
-        width: 29px;
-    }
-}
+
 
 
 

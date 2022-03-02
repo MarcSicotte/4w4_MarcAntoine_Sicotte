@@ -1,7 +1,7 @@
 
 
 .site__footer{
-
+    font-family: 'Oxygen', sans-serif;
     display: none;
     flex-direction: column;
     &__zone1{ // Première partie avec les infos générals et un message.
@@ -54,17 +54,18 @@
                             margin-left: 5px;
                             color: $color__link__footer;
                         }
+                        &:visited{
+                            svg{
+                                color: $color__link__footer-visited;
+                            }
+                        }
                         &:hover{
                             svg{
                                 color: $color__link__footer-hover;
                             }
                         }
 
-                        &:visited{
-                            svg{
-                                color: $color__link__footer-visited;
-                            }
-                        }
+                        
                     }
                 }
             }

@@ -1,5 +1,6 @@
 html{
     margin: 0 !important;
+    
 }
 .site__header{
 
@@ -16,6 +17,7 @@ html{
 .site__main{
     grid-area : main;
     background-color: $color__background-main;
+    
 }
 
 .site__footer{
