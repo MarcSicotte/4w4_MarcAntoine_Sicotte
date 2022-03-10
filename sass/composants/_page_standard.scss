@@ -3,13 +3,14 @@
     flex-direction: column;
     background-color: $color__background-main;
     row-gap: 20px;
-    border: solid 3px black;
+    box-shadow: 0px 0px 10px 2px #000000;
    
     h1{
         background-color: black;
-        color: white;
+        color: rgb(30, 43, 155);
         font-family: $font__header-h2;
         margin: 0 auto;
+        padding: 5px;
         width: 100%;
         
     }

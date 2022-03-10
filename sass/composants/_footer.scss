@@ -1,4 +1,73 @@
+/*site__footer{
+    background-color: black;
+    font-family: 'Oxygen', sans-serif;
+    display: none;
+    flex-direction: column;
+    &__colonne{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+        section{
+            display: flex;
+            flex-direction: column;
+            border:  1px solid black;
+        }
+        .footer__adresse{}
+        .footer__article{}
+        .footer__lien{}
 
+
+    }
+
+    &__ligne{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        section{}
+        .footer__description{}
+        .footer__menu{
+            &__nav{ // Deuxième partie avec menu secondaire.
+                &__ul{
+                    display: flex;
+                    list-style: none;
+                    justify-content: center;
+    
+                    .menu-item{
+                        margin: 10px 5px;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            padding: 3px;
+                            svg{
+                                margin-left: 5px;
+                                color: $color__link__footer;
+                            }
+                            &:visited{
+                                svg{
+                                    color: $color__link__footer-visited;
+                                }
+                            }
+                            &:hover{
+                                svg{
+                                    color: $color__link__footer-hover;
+                                }
+                            }
+    
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .footer__copyright{}
+        .footer__recherche{}
+        .footer__auteur{}
+
+
+
+    }
+} */
 
 .site__footer{
     font-family: 'Oxygen', sans-serif;
@@ -6,7 +75,7 @@
     flex-direction: column;
     &__zone1{ // Première partie avec les infos générals et un message.
         display: flex;
-        justify-content: space-between;
+        column-gap: 8%;
         margin-left: 10%;
         margin-right: 10%;
         
@@ -20,6 +89,12 @@
                 list-style-type: none;
                 padding-bottom: 1%;
 
+            }
+        }
+
+        .text{
+            p{
+                font-size: 1rem;
             }
         }
 
@@ -42,6 +117,7 @@
             &__ul{
                 display: flex;
                 list-style: none;
+                
                 justify-content: center;
 
                 .menu-item{
@@ -79,7 +155,7 @@
             
     
     }
- 
+
     
 
 
