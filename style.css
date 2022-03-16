@@ -613,17 +613,21 @@ a:hover, a:active {
 .site__footer__zone1 {
   display: flex;
   column-gap: 8%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .site__footer__zone1 .infos {
   margin-right: 2%;
+  width: 100%;
 }
 
 .site__footer__zone1 .infos li {
   list-style-type: none;
-  padding-bottom: 1%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
 }
 
 .site__footer__zone1 .text p {
@@ -635,7 +639,7 @@ a:hover, a:active {
     display: block;
     padding: 25px;
     display: flex;
-    color: white;
+    color: #ececec;
     width: 100%;
   }
   .site__footer__menu__ul {
@@ -791,6 +795,10 @@ a:hover, a:active {
 .site__header__titres h2 {
   font-family: "Trebuchet MS", sans-serif;
   font-size: clamp(1.5rem, 2vw, 6rem);
+  animation-name: couleurTitre;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
 }
 
 .site__header__util {
@@ -810,12 +818,28 @@ a:hover, a:active {
   padding: 1px;
 }
 
+@keyframes couleurTitre {
+  0% {
+    color: black;
+  }
+  25% {
+    color: #1e2b9b;
+  }
+  50% {
+    color: #ec740c;
+  }
+  100% {
+    color: black;
+  }
+}
+
 .erreur-404 {
   background-color: black;
   color: white;
 }
 
 .erreur-404 h1 {
+  border: solid yellow 2px;
   font-size: 4rem;
 }
 
@@ -838,6 +862,27 @@ a:hover, a:active {
   width: 29px;
 }
 
+.cours__titre {
+  margin-left: 4%;
+}
+
+.cours__details {
+  display: inline;
+  margin-left: 15px;
+}
+
+.cours__details .thumbnail {
+  width: 20%;
+  margin-top: 15px;
+  box-shadow: 0px 0px 10px 2px #000000;
+}
+
+.cours__details__description {
+  font-family: "Oxygen", sans-serif;
+  font-size: 1.5rem;
+  text-justify: auto;
+}
+
 .site__main-type2 {
   display: flex;
   flex-direction: column;
@@ -846,13 +891,38 @@ a:hover, a:active {
   box-shadow: 0px 0px 10px 2px #000000;
 }
 
-.site__main-type2 h1 {
+.site__main-type2 .titre {
+  display: flex;
+  align-items: center;
+  column-gap: 33%;
   background-color: black;
   color: #1e2b9b;
   font-family: "Trebuchet MS", sans-serif;
-  margin: 0 auto;
-  padding: 5px;
   width: 100%;
+}
+
+.site__main-type2 .titre .bienvenu {
+  margin-left: 1%;
+  animation-name: bienvenu;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.site__main-type2 .titre .welcome {
+  margin: 0;
+  animation-name: welcome;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.site__main-type2 .titre .mandarin {
+  margin: 0;
+  animation-name: mandarin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .site__main-type2 .page__standard {
@@ -862,5 +932,68 @@ a:hover, a:active {
 
 .site__main-type2__content {
   margin: 0 0 0 15px;
+}
+
+@keyframes bienvenu {
+  0% {
+    color: #1e2b9b;
+  }
+  20% {
+    color: black;
+  }
+  40% {
+    color: black;
+  }
+  60% {
+    color: black;
+  }
+  80% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes welcome {
+  0% {
+    color: black;
+  }
+  20% {
+    color: black;
+  }
+  40% {
+    color: #1e2b9b;
+  }
+  60% {
+    color: black;
+  }
+  80% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes mandarin {
+  0% {
+    color: black;
+  }
+  20% {
+    color: black;
+  }
+  40% {
+    color: black;
+  }
+  60% {
+    color: black;
+  }
+  80% {
+    color: #1e2b9b;
+  }
+  100% {
+    color: black;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -76,23 +76,33 @@
     &__zone1{ // Première partie avec les infos générals et un message.
         display: flex;
         column-gap: 8%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+
         
         
 
         .infos{
         
             margin-right: 2%;
+            
+            width: 100%;
 
             li{
                 list-style-type: none;
-                padding-bottom: 1%;
+                padding: 4px;
+                display: flex;
+                align-items: center;
+                column-gap: 0.4rem;
+                
 
             }
         }
 
         .text{
+           
+
             p{
                 font-size: 1rem;
             }
@@ -108,7 +118,7 @@
         display: block;
         padding: 25px;
         display :flex;
-        color: white;
+        color: #ececec;
         width: 100%;
 
     

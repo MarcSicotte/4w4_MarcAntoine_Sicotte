@@ -42,12 +42,14 @@
 
 }
 .carte {
+    
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px 2px #000000;
     width: 100%;
     @media screen and (min-width: $largeur__media-tablette){
         width: 45%;
+    
     }
     @media screen and (min-width: $largeur__media-desktop){
         width: 28%;

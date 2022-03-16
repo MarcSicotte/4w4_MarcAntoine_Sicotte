@@ -17,10 +17,10 @@
                 <?php the_title(); ?>
             </h1>
             
-               <p>
-                  <img src="" alt="" class="thumbnail" <?php the_post_thumbnail() ?> > 
-                   <?php echo get_the_content(); ?>
-                </p> 
+               <section class="cours__details">
+                  <img src="" alt="" class="thumbnail" <?php the_post_thumbnail() ?>>
+                  <p class="cours__details__description"><?php echo get_the_content(); ?></p> 
+               </section> 
         </article>
 
     <?php endwhile; ?>
