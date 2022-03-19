@@ -1,75 +1,7 @@
-/*site__footer{
-    background-color: black;
-    font-family: 'Oxygen', sans-serif;
-    display: none;
-    flex-direction: column;
-    &__colonne{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 10%;
-        margin-right: 10%;
-        section{
-            display: flex;
-            flex-direction: column;
-            border:  1px solid black;
-        }
-        .footer__adresse{}
-        .footer__article{}
-        .footer__lien{}
 
-
-    }
-
-    &__ligne{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        section{}
-        .footer__description{}
-        .footer__menu{
-            &__nav{ // Deuxième partie avec menu secondaire.
-                &__ul{
-                    display: flex;
-                    list-style: none;
-                    justify-content: center;
-    
-                    .menu-item{
-                        margin: 10px 5px;
-                        a{
-                            display: flex;
-                            align-items: center;
-                            padding: 3px;
-                            svg{
-                                margin-left: 5px;
-                                color: $color__link__footer;
-                            }
-                            &:visited{
-                                svg{
-                                    color: $color__link__footer-visited;
-                                }
-                            }
-                            &:hover{
-                                svg{
-                                    color: $color__link__footer-hover;
-                                }
-                            }
-    
-                            
-                        }
-                    }
-                }
-            }
-        }
-        .footer__copyright{}
-        .footer__recherche{}
-        .footer__auteur{}
-
-
-
-    }
-} */
 
 .site__footer{
+    background-color: black;
     font-family: 'Oxygen', sans-serif;
     display: none;
     flex-direction: column;
@@ -103,9 +35,13 @@
         .menu3{
             width: 100%;
             .menu-item{
+                display: flex;
+                flex-direction: column;
+                @include couleursNavfooter;
                 
-                list-style: none;
+                 list-style: none;
                 a{
+                    margin-bottom: 10px;
                     text-decoration: none;
                 }
             }
@@ -124,15 +60,22 @@
 
     }
     &__zone2{
-        margin: 3% 5% 0% 5%;
-        .footer__recherche{
-           display: flex;
-           align-items: center;
-           column-gap: 50%;
-           margin-left: 4%;
-           margin-top: 4%;
-         
+
+        .recherche{
+            display: flex;
+            width: 90%;
+            align-items: center;
+            margin-left: 4%;
+           
         }
+
+       #sidebar-primary{
+           width: 7%;
+           margin-right: 2%;
+       }
+  
+        
+        
     }
     
 
@@ -149,29 +92,22 @@
             &__ul{
                 display: flex;
                 list-style: none;
-                
                 justify-content: center;
-
+                margin-top: 3%;
+                margin-bottom: 3%;
                 .menu-item{
-                    margin: 10px 5px;
+                    margin: 10px 10px ;
                     a{
                         display: flex;
                         align-items: center;
-                        padding: 3px;
+                        padding: 7px;
+                        @include couleursNavfooter;
                         svg{
                             margin-left: 5px;
-                            color: $color__link__footer;
+                            @include couleursNavfooter;
                         }
-                        &:visited{
-                            svg{
-                                color: $color__link__footer-visited;
-                            }
-                        }
-                        &:hover{
-                            svg{
-                                color: $color__link__footer-hover;
-                            }
-                        }
+                      
+                      
 
                         
                     }

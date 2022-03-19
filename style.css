@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
 Theme name: exercice1-MarcAntoine-Sicotte
 Author : Marc-Antoine Sicotte
@@ -371,7 +370,6 @@ html {
 
 .site__footer {
   grid-area: footer;
-  background-color: #141414;
 }
 
 .site {
@@ -399,60 +397,6 @@ html {
 }
 
 /* -------------------------- ELEMENTS ---------------------- */
-/**************************
-*
-* Gestion des Mixins
-*
-***************************/
-a {
-  display: block;
-  padding: 5px;
-  color: #1e2b9b;
-  margin-left: 20px;
-}
-
-a:visited {
-  color: #191970;
-}
-
-a:hover, a:focus, a:active {
-  color: #800080;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover, a:active {
-  outline: 0;
-}
-
-.site__footer a {
-  display: block;
-  padding: 5px;
-  color: #1e2b9b;
-  margin-left: 20px;
-  display: block;
-  padding: 10px;
-  margin-left: 20px;
-}
-
-.site__footer a:visited {
-  color: #bdbdbd;
-}
-
-.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: white;
-}
-
-.site__footer a:focus {
-  outline: thin dotted;
-}
-
-.site__footer a:hover, .site__footer a:active {
-  outline: 0;
-}
-
 .site__header__titres a {
   display: block;
   padding: 5px;
@@ -476,6 +420,11 @@ a:hover, a:active {
   outline: 0;
 }
 
+/**************************
+*
+* Gestion des Mixins
+*
+***************************/
 /* -------------------------- COMPOSANTS ---------------------- */
 /**************************
 *
@@ -540,11 +489,14 @@ a:hover, a:active {
 }
 
 .carte__titre {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
   margin: 0;
   font-size: 1.5rem;
-  font-family: "Trebuchet MS", sans-serif;
   background-color: black;
   color: #1e2b9b;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 .carte__titre a {
@@ -557,77 +509,8 @@ a:hover, a:active {
   color: DimGrey;
 }
 
-/*site__footer{
-    background-color: black;
-    font-family: 'Oxygen', sans-serif;
-    display: none;
-    flex-direction: column;
-    &__colonne{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 10%;
-        margin-right: 10%;
-        section{
-            display: flex;
-            flex-direction: column;
-            border:  1px solid black;
-        }
-        .footer__adresse{}
-        .footer__article{}
-        .footer__lien{}
-
-
-    }
-
-    &__ligne{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        section{}
-        .footer__description{}
-        .footer__menu{
-            &__nav{ // Deuxième partie avec menu secondaire.
-                &__ul{
-                    display: flex;
-                    list-style: none;
-                    justify-content: center;
-    
-                    .menu-item{
-                        margin: 10px 5px;
-                        a{
-                            display: flex;
-                            align-items: center;
-                            padding: 3px;
-                            svg{
-                                margin-left: 5px;
-                                color: $color__link__footer;
-                            }
-                            &:visited{
-                                svg{
-                                    color: $color__link__footer-visited;
-                                }
-                            }
-                            &:hover{
-                                svg{
-                                    color: $color__link__footer-hover;
-                                }
-                            }
-    
-                            
-                        }
-                    }
-                }
-            }
-        }
-        .footer__copyright{}
-        .footer__recherche{}
-        .footer__auteur{}
-
-
-
-    }
-} */
 .site__footer {
+  background-color: black;
   font-family: 'Oxygen', sans-serif;
   display: none;
   flex-direction: column;
@@ -658,10 +541,22 @@ a:hover, a:active {
 }
 
 .site__footer__zone1 .menu3 .menu-item {
+  display: flex;
+  flex-direction: column;
+  color: #1e2b9b;
   list-style: none;
 }
 
+.site__footer__zone1 .menu3 .menu-item:visited {
+  color: #bdbdbd;
+}
+
+.site__footer__zone1 .menu3 .menu-item:hover {
+  color: white;
+}
+
 .site__footer__zone1 .menu3 .menu-item a {
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
@@ -669,16 +564,16 @@ a:hover, a:active {
   font-size: 1rem;
 }
 
-.site__footer__zone2 {
-  margin: 3% 5% 0% 5%;
+.site__footer__zone2 .recherche {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin-left: 4%;
 }
 
-.site__footer__zone2 .footer__recherche {
-  display: flex;
-  align-items: center;
-  column-gap: 50%;
-  margin-left: 4%;
-  margin-top: 4%;
+.site__footer__zone2 #sidebar-primary {
+  width: 7%;
+  margin-right: 2%;
 }
 
 @media screen and (min-width: 600px) {
@@ -693,23 +588,32 @@ a:hover, a:active {
     display: flex;
     list-style: none;
     justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
   }
   .site__footer__menu__ul .menu-item {
-    margin: 10px 5px;
+    margin: 10px 10px;
   }
   .site__footer__menu__ul .menu-item a {
     display: flex;
     align-items: center;
-    padding: 3px;
+    padding: 7px;
+    color: #1e2b9b;
+  }
+  .site__footer__menu__ul .menu-item a:visited {
+    color: #bdbdbd;
+  }
+  .site__footer__menu__ul .menu-item a:hover {
+    color: white;
   }
   .site__footer__menu__ul .menu-item a svg {
     margin-left: 5px;
     color: #1e2b9b;
   }
-  .site__footer__menu__ul .menu-item a:visited svg {
+  .site__footer__menu__ul .menu-item a svg:visited {
     color: #bdbdbd;
   }
-  .site__footer__menu__ul .menu-item a:hover svg {
+  .site__footer__menu__ul .menu-item a svg:hover {
     color: white;
   }
 }
@@ -808,7 +712,7 @@ a:hover, a:active {
     display: none;
   }
   .home #chk-burger {
-    display: block;
+    display: none !important;
   }
   .home #burger {
     display: block;
@@ -866,15 +770,6 @@ a:hover, a:active {
 
 .site__header__util {
   margin: auto 10%;
-}
-
-.icone {
-  display: flex;
-}
-
-.icone__lien {
-  margin: 0;
-  padding: 1px;
 }
 
 @keyframes couleurTitre {
@@ -942,7 +837,7 @@ a:hover, a:active {
   text-justify: auto;
 }
 
-.site__main-type2 {
+.site__main-typ2 {
   display: flex;
   flex-direction: column;
   background-color: #ececec;
@@ -950,7 +845,7 @@ a:hover, a:active {
   box-shadow: 0px 0px 10px 2px #000000;
 }
 
-.site__main-type2 .titre {
+.site__main-typ2__titre {
   display: flex;
   align-items: center;
   column-gap: 33%;
@@ -960,7 +855,7 @@ a:hover, a:active {
   width: 100%;
 }
 
-.site__main-type2 .titre .bienvenu {
+.site__main-typ2__titre .bienvenu {
   margin-left: 1%;
   animation-name: bienvenu;
   animation-duration: 5s;
@@ -968,7 +863,7 @@ a:hover, a:active {
   animation-iteration-count: infinite;
 }
 
-.site__main-type2 .titre .welcome {
+.site__main-typ2__titre .welcome {
   margin: 0;
   animation-name: welcome;
   animation-duration: 5s;
@@ -976,7 +871,7 @@ a:hover, a:active {
   animation-iteration-count: infinite;
 }
 
-.site__main-type2 .titre .mandarin {
+.site__main-typ2__titre .mandarin {
   margin: 0;
   animation-name: mandarin;
   animation-duration: 5s;
@@ -984,13 +879,8 @@ a:hover, a:active {
   animation-iteration-count: infinite;
 }
 
-.site__main-type2 .page__standard {
-  margin: 0 0 0 15px;
-  font-family: 'Oxygen', sans-serif;
-}
-
-.site__main-type2__content {
-  margin: 0 0 0 15px;
+.site__main-typ2 .content {
+  margin-left: 15px !important;
 }
 
 @keyframes bienvenu {

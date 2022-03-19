@@ -16,7 +16,6 @@
     padding-bottom: 2%;
     h1{
         @include couleursTitresmain;
-        
         margin: auto;
         padding: 4px;
         width: 100%;
@@ -58,6 +57,9 @@
     
 }
 .carte__titre {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
     margin: 0;
     font-size: 1.5rem;
     @include couleursTitresmain;

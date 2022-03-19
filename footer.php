@@ -61,10 +61,12 @@
                                     "link_after"=> $icone));
                                     
         ?> 
-        <section class="footer__recherche"> 
-            <?php  get_search_form(); ?>
-            <p>Marc-Antoine Sicotte &copy; Tout droits réservés</p>
-        </section>
+     
+       <div class="recherche">
+            <?php get_search_form(); ?>
+            <?php get_sidebar( 'pied_page_signature' ); ?>
+            <p>Marc-Antoine Sicotte, tout droit réserver &copy;</p>
+       </div>     
    
     </div>
     

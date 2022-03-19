@@ -12,3 +12,15 @@
 
     
 }
+
+@mixin couleursNavfooter{
+    color: $color__link__footer;
+    &:visited{
+            color: $color__link__footer-visited;
+    }
+    &:hover{
+            color: $color__link__footer-hover;
+    }
+
+}
+

@@ -13,11 +13,12 @@
         ?>
             <section class="carte">
         
-                    <?php the_post_thumbnail("thumbnail"); ?>
+                    
                     <h3 class="carte__titre">
-                        
-                    <a href="<?php echo get_permalink(); ?>"><?php echo $mon_titre_filtre ?></a> 
+                        <?php the_post_thumbnail("thumbnail"); ?>
+                        <a href="<?php echo get_permalink(); ?>"><?php echo $mon_titre_filtre ?></a> 
                     </h3>
+                   
                     <p class="carte__contenu"><?php echo the_excerpt(); ?></p>
                 
                 
