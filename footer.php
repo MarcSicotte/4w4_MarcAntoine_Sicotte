@@ -4,9 +4,7 @@
     <section class="footer__adresse">3800, rue Sherbrooke Est Montréal</section>
     <section class="footer__article"></section>
     <section class="footer__lien">
-        <?php
-            wp_nav_menu(array("menu"=>"lien_externe"));
-        ?>
+        
     </section>
     
 <div class="site__footer_ligne">
@@ -37,6 +35,9 @@
 
 
     <div class="menu3">
+        <?php
+            wp_nav_menu(array("menu"=>"lien_externe"));
+        ?>
         
     </div>
     
@@ -60,7 +61,10 @@
                                     "link_after"=> $icone));
                                     
         ?> 
-        <section class="footer__recherche"> <?php  get_search_form(); ?></section>
+        <section class="footer__recherche"> 
+            <?php  get_search_form(); ?>
+            <p>Marc-Antoine Sicotte &copy; Tout droits réservés</p>
+        </section>
    
     </div>
     

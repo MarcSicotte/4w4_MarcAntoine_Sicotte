@@ -1,8 +1,4 @@
-/**************************
-*
-* Gestion des Mixins
-*
-***************************/
+
 
 
 
@@ -33,20 +29,6 @@
 }
 
 
-
-a{
-	@include links($color__link, $color__link-hover, $color__link-visited);
-}
-
-.site__footer a {
-	@include links($color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
-    display:block;
-	padding: 10px;
-	
-	margin-left: 20px;
-
-
-}
 
 .site__header__titres a{
 	@include links($color__link, $color__link-hover, $color__link-visited);

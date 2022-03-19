@@ -338,10 +338,25 @@ html {
 /* -------------------LAYOUT---------- */
 html {
   margin: 0 !important;
+  font-family: "Oxygen", sans-serif;
 }
 
 .site__header {
   grid-area: header;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clip-path: polygon();
+  background-color: #ececec;
+  z-index: -1;
 }
 
 .site__barre {
@@ -372,6 +387,14 @@ html {
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "barre main" "footer footer";
+  }
+  .home {
+    height: 100%;
+    background-color: #ececec;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "barre" "header" "main" "footer";
   }
 }
 
@@ -630,8 +653,32 @@ a:hover, a:active {
   column-gap: 0.4rem;
 }
 
+.site__footer__zone1 .menu3 {
+  width: 100%;
+}
+
+.site__footer__zone1 .menu3 .menu-item {
+  list-style: none;
+}
+
+.site__footer__zone1 .menu3 .menu-item a {
+  text-decoration: none;
+}
+
 .site__footer__zone1 .text p {
   font-size: 1rem;
+}
+
+.site__footer__zone2 {
+  margin: 3% 5% 0% 5%;
+}
+
+.site__footer__zone2 .footer__recherche {
+  display: flex;
+  align-items: center;
+  column-gap: 50%;
+  margin-left: 4%;
+  margin-top: 4%;
 }
 
 @media screen and (min-width: 600px) {
@@ -757,6 +804,22 @@ a:hover, a:active {
   .menu-principal-container {
     display: block;
   }
+  .home .menu-principal-container {
+    display: none;
+  }
+  .home #chk-burger {
+    display: block;
+  }
+  .home #burger {
+    display: block;
+    position: absolute;
+    left: 2%;
+    transform: rotate(0deg);
+    transition: transform .3s;
+  }
+  .home #chk-burger:checked ~ #burger {
+    transform: rotate(90deg);
+  }
 }
 
 .site__header {
@@ -803,10 +866,6 @@ a:hover, a:active {
 
 .site__header__util {
   margin: auto 10%;
-}
-
-.site__header__util .icone {
-  padding-bottom: 20px;
 }
 
 .icone {

@@ -1,4 +1,4 @@
-.site__main-type2{
+.site__main-typ2{
     display: flex;
     flex-direction: column;
     background-color: $color__background-main;
@@ -49,9 +49,15 @@
 
     
 
+
+
+    
+
     .page__standard{
         margin: 0 0 0 15px ;
         font-family: 'Oxygen', sans-serif;
+      
+    
     }
 
     &__content{
@@ -143,3 +149,4 @@
 
     
 }
+

@@ -6,9 +6,6 @@
         flex-direction: row;
         margin-left: 0;
 
-        &__titres{
-            
-        }
 
     
     }
@@ -44,9 +41,7 @@
         &__util{
             margin: auto 10% ;
             
-            .icone{
-                padding-bottom: 20px;
-            }
+            
                 
         
         }
@@ -54,8 +49,7 @@
 
 }
 
-.icone{
-    display: flex;
+
    
 
  
@@ -65,7 +59,7 @@
         padding: 1px;
     }
 
-}
+
 
 @keyframes couleurTitre{
     0%   {color: black;}

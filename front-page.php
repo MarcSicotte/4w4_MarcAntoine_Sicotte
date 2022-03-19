@@ -5,10 +5,11 @@
         <h1 class="welcome">Welcome</h1>
         <h1 class="mandarin">欢迎</h1>
     </div>
-<h2 class="main__titre">Ma plateforme web</h2>
+    
 <div class="page__standard">
+    <h2>Ma plateforme Web</h2>
     <h3>582-4W4</h3>
-    <p>Un site réaliser sur WordPress avec la méthode de développement SASS </p>
+    <p class="page__standard__p">Un site réaliser sur WordPress avec la méthode de développement SASS </p>
 </div>
 
     <?php if (have_posts()):the_post()?>

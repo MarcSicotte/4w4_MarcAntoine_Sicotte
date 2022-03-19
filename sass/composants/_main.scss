@@ -15,9 +15,8 @@
     box-shadow: 0px 0px 10px 2px #000000;
     padding-bottom: 2%;
     h1{
-        background-color: black;
-        color: rgb(30, 43, 155);
-        font-family: $font__header-h2;
+        @include couleursTitresmain;
+        
         margin: auto;
         padding: 4px;
         width: 100%;
@@ -61,9 +60,7 @@
 .carte__titre {
     margin: 0;
     font-size: 1.5rem;
-    font-family: $font__header-h2;
-    background-color: black;
-    color: rgb(30, 43, 155);
+    @include couleursTitresmain;
     a{
         text-decoration: none;
         color: $color__link;

@@ -1,11 +1,28 @@
 html{
     margin: 0 !important;
+    font-family: $font__main-content;
     
 }
 .site__header{
 
     grid-area : header;
     
+
+}
+
+.home::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clip-path: polygon();
+    background-color: $color__background-body;
+    z-index: -1;
+
 
 }
 
@@ -48,6 +65,19 @@ html{
        "header header"
        "barre main"
        "footer footer";
+}
+
+.home{
+    height: 100%;
+    background-color: $color__background-body ;
+    gap : 10px;
+    display: grid;
+    grid-template-columns:  auto;
+    grid-template-areas:
+        "barre"
+        "header"
+        "main"
+        "footer";
 }
 
 }
