@@ -14,7 +14,7 @@ wp_enqueue_style('style_css',
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 
-/*************** Enregistrer le menu ********************/
+/*************** Enregistrer les menu ********************/
 
 function cidw_4w4_enregistre_mon_menu() {
   register_nav_menus( array(
