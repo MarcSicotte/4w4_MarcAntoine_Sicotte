@@ -1,7 +1,16 @@
 <?php get_header(); ?>
 <main class="site__main">
-    <!--<h1>-------------------------------------Category-------------------------------------</h1>-->
-<h1>Liste des cours</h2>
+   <!-- <h1>-------------------------------------Category-------------------------------------</h1> -->
+   <h1>Liste des cours</h2>
+<?php
+    wp_nav_menu(array(
+        "menu" => "categorie_cours",
+        "container" => "nav"
+    ));
+
+
+?>
+
     <?php if (have_posts()): ?>
         <?php while (have_posts()): the_post(); ?>
         <?php

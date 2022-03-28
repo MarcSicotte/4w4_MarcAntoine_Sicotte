@@ -1,0 +1,16 @@
+/*
+    NAVIGATION POUR LA PAGE CATEGORY.PHP
+*/
+
+.menu-categorie_cours-container{
+    .menu{ //ul
+        display: flex;
+        list-style-type: none;
+        .menu-item{ //li
+            margin: 0 15px;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
