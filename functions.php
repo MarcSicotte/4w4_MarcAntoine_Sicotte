@@ -90,5 +90,12 @@ function my_register_sidebars() {
         );
 
 }
+
+/*--------------------------------------------------------------------------------- */
+function trouve_la_categorie($tableau){
+  foreach($tableau as $cle){
+      if(is_category($cle)) return($cle);
+  }
+}
 ?>
 

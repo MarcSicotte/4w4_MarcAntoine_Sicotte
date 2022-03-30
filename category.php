@@ -1,37 +1,28 @@
 <?php get_header(); ?>
 <main class="site__main">
    <!-- <h1>-------------------------------------Category-------------------------------------</h1> -->
+   <?php
+        wp_nav_menu(array(
+            "menu" => "categorie_cours",
+            "container" => "nav"
+        ));
+
+
+    ?>
    <h1>Liste des cours</h2>
-<?php
-    wp_nav_menu(array(
-        "menu" => "categorie_cours",
-        "container" => "nav"
-    ));
+    <?php 
 
+        $url_categorie = trouve_la_categorie(array('web','jeu','design', 'utilitaire', 'creation-3d', 'video'));
+        $ma_categorie = get_category_by_slug($url_categorie);
+        echo "<h3>" . $ma_categorie->description . "</h3>"
+       
+    ?>
 
-?>
 
     <?php if (have_posts()): ?>
         <?php while (have_posts()): the_post(); ?>
-        <?php
-            $mon_titre = get_the_title();
-            $mon_titre_filtre = substr($mon_titre,8);
-            $_monsigle = substr($mon_titre,0,7);
-            $mon_titre_filtre = substr($mon_titre_filtre,0, strrpos($mon_titre_filtre,'(')); 
-            $ma_duree = substr($mon_titre,strrpos($mon_titre,'('));
-        ?>
-            <section class="carte">
+        <?php get_template_part("gabarits/content","cours"); ?>
         
-                    
-                    <h3 class="carte__titre">
-                        <?php the_post_thumbnail("thumbnail"); ?>
-                        <a href="<?php echo get_permalink(); ?>"><?php echo $mon_titre_filtre ?></a> 
-                    </h3>
-                   
-                    <p class="carte__contenu"><?php echo the_excerpt(); ?></p>
-                
-                
-            </section>     
         <?php endwhile ?>
     <?php endif ?>
 </main>
