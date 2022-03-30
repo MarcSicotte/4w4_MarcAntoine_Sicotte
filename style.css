@@ -427,6 +427,26 @@ html {
 * Gestion des Mixins
 *
 ***************************/
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+}
+
+a {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+li {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
 /* -------------------------- COMPOSANTS ---------------------- */
 /**************************
 *
@@ -490,31 +510,45 @@ html {
   }
 }
 
-.carte .web {
+.web {
+  background-position: 97% 95%;
+  background-repeat: no-repeat;
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
 }
 
-.carte .jeu {
+.jeu {
+  background-position: 97% 95%;
+  background-repeat: no-repeat;
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
 }
 
-.carte .comm {
+.comm {
+  background-position: 97% 95%;
+  background-repeat: no-repeat;
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
 }
 
-.carte .design {
+.design {
+  background-position: 97% 95%;
+  background-repeat: no-repeat;
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
 }
 
-.carte .utilitaire {
+.utilitaire {
+  background-position: 97% 95%;
+  background-repeat: no-repeat;
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
 }
 
-.carte .video {
+.video {
+  background-position: 97% 95%;
+  background-repeat: no-repeat;
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
 }
 
-.carte .creation-3d {
+.creation-3d {
+  background-position: 97% 95%;
+  background-repeat: no-repeat;
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 

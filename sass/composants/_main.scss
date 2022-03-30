@@ -40,7 +40,8 @@
 
 }
 .carte {
-    
+
+  
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px 2px #000000;
@@ -54,37 +55,52 @@
     }
     
     background-color: rgb(189, 189, 189);
-    .web {
-        background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
-        
-    }
-    .jeu{
-        background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
-        
-    }
-    .comm {
-        background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
-    }
-    .design {
-        background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
-        // 3d https://s2.svgbox.net/materialui.svg?ic=view_in_ar
-        // palette peinture https://s2.svgbox.net/materialui.svg?ic=color_lens
-        // image https://s2.svgbox.net/octicons.svg?ic=image
-    }
-    .utilitaire{
-        background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
-    }
-    .video {
-        background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
-        //https://s2.svgbox.net/materialui.svg?ic=movie
-        //camera https://s2.svgbox.net/materialui.svg?ic=voice_chat
-        // camera video https://s2.svgbox.net/octicons.svg?ic=device-camera-video
-        // video https://s2.svgbox.net/materialui.svg?ic=duo
-    }
-    .creation-3d {
-        background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
-        
-    }
+    
+}
+.web {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+    
+}
+.jeu{
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+    
+}
+.comm {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
+}
+.design {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+    // 3d https://s2.svgbox.net/materialui.svg?ic=view_in_ar
+    // palette peinture https://s2.svgbox.net/materialui.svg?ic=color_lens
+    // image https://s2.svgbox.net/octicons.svg?ic=image
+}
+.utilitaire{
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+}
+.video {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+    //https://s2.svgbox.net/materialui.svg?ic=movie
+    //camera https://s2.svgbox.net/materialui.svg?ic=voice_chat
+    // camera video https://s2.svgbox.net/octicons.svg?ic=device-camera-video
+    // video https://s2.svgbox.net/materialui.svg?ic=duo
+}
+.creation-3d {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+    
 }
 .carte__titre {
     display: flex;

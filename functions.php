@@ -8,8 +8,9 @@ wp_enqueue_style('style_css',
                 false);
 
                 wp_enqueue_style('cidw_4w_police_google',
-                "https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300&display=swap",
+                "https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins&display=swap",
                 false);
+              
 } 
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
