@@ -467,9 +467,10 @@ li {
   background-color: black;
   color: #1e2b9b;
   font-family: "Trebuchet MS", sans-serif;
-  margin: auto;
-  padding: 4px;
+  margin: 0;
+  padding: 0;
   width: 100%;
+  height: fit-content;
 }
 
 .site__main p {
@@ -793,16 +794,49 @@ li {
 /*
     NAVIGATION POUR LA PAGE CATEGORY.PHP
 */
+.menu-categorie_cours-container {
+  width: 100%;
+  margin: 0 50% 0 50%;
+  height: fit-content;
+}
+
 .menu-categorie_cours-container .menu {
   display: flex;
   list-style-type: none;
 }
 
 .menu-categorie_cours-container .menu .menu-item {
+  text-align: center;
+  width: 90px;
   margin: 0 15px;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
+  text-decoration: none;
+}
+
+/*
+    NAVIGATION POUR LA PAGE FRONT-PAGE.PHP
+*/
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-accueil-container .menu .menu-item {
+  background: linear-gradient(45deg, #151c9e 5%, #fd541d 50%, #fda52a 100%);
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  text-justify: auto;
+  width: 200px;
+  margin: 0 30px;
+  list-style: none;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  color: white;
+  font-size: 1rem;
   text-decoration: none;
 }
 

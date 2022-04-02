@@ -16,9 +16,10 @@
     padding-bottom: 2%;
     h1{
         @include couleursTitresmain;
-        margin: auto;
-        padding: 4px;
+        margin: 0;
+        padding: 0;
         width: 100%;
+        height: fit-content;
         
     }
 

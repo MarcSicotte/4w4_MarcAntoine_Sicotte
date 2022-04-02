@@ -1,6 +1,14 @@
 <?php get_header(); ?>
 <main class="site__main">
    <!-- <h1>-------------------------------------Category-------------------------------------</h1> -->
+   <?php 
+
+        $url_categorie_slug = trouve_la_categorie(array('web','jeu','design', 'utilitaire', 'creation-3d', 'video', 'cours'));
+        $ma_categorie = get_category_by_slug($url_categorie_slug);
+        echo "<h1>" . $ma_categorie->description . "</h1>"
+       
+    ?>
+    
    <?php
         wp_nav_menu(array(
             "menu" => "categorie_cours",
@@ -9,14 +17,7 @@
 
 
     ?>
-   <h1>Liste des cours</h2>
-    <?php 
-
-        $url_categorie_slug = trouve_la_categorie(array('web','jeu','design', 'utilitaire', 'creation-3d', 'video', 'cours'));
-        $ma_categorie = get_category_by_slug($url_categorie_slug);
-        echo "<h3>" . $ma_categorie->description . "</h3>"
-       
-    ?>
+    
 
 
     <?php if (have_posts()): ?>

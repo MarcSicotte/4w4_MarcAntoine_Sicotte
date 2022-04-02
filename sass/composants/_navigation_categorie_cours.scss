@@ -3,10 +3,15 @@
 */
 
 .menu-categorie_cours-container{
+    width: 100%;
+    margin: 0 50% 0 50%;
+    height: fit-content;
     .menu{ //ul
         display: flex;
         list-style-type: none;
         .menu-item{ //li
+            text-align: center;
+            width: 90px;
             margin: 0 15px;
             a{
                 text-decoration: none;

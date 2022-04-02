@@ -1,0 +1,25 @@
+/*
+    NAVIGATION POUR LA PAGE FRONT-PAGE.PHP
+*/
+
+.menu-accueil-container{ //nav
+    .menu{ //ul
+        display: flex;
+        justify-content: center;
+        .menu-item{ //li
+            background: linear-gradient(45deg, rgba(21,28,158,1) 5%, rgba(253,84,29,1) 50%, rgba(253,165,42,1) 100%);
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            text-justify: auto;
+            width: 200px;
+            margin: 0 30px;
+            list-style: none;
+            a{
+                color: white;
+                font-size: 1rem;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -11,6 +11,13 @@
     <h3>582-4W4</h3>
     <p class="page__standard__p">Un site réaliser sur WordPress avec la méthode de développement SASS </p>
 
+    <?php wp_nav_menu(array(
+        "menu" => "menu_accueil",
+        "container" => "nav" ));
+    
+    ?>
+
+
 
     <?php if (have_posts()):the_post()?>
 
