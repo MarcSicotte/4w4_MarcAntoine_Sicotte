@@ -12,6 +12,20 @@
             
 
         }
+        .accueil__cours .menu-item-icone{
+            background-image : url("https://s2.svgbox.net/octicons.svg?ic=repo");
+        }
+        .accueil__aide .menu-item-icone{
+            background-image: url("https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg");
+        }
+
+        .accueil__etudiant .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board");
+        }
+
+        .accueil__profs .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=people");
+        }
         .menu-item{ //li
             background: linear-gradient(45deg, rgba(21,28,158,1) 5%, rgba(253,84,29,1) 50%, rgba(253,165,42,1) 100%);
             padding: 5px;
@@ -19,6 +33,7 @@
             text-align: center;
             text-justify: auto;
             width: 200px;
+            height: fit-content;
             margin: 0 0 20px 0;
             list-style: none;
 
@@ -30,6 +45,13 @@
                 color: white;
                 font-size: 1rem;
                 text-decoration: none;
+                .menu-item-icone{//div
+                    border: 1px solid black;
+                    width: 2rem;
+                    height: fit-content;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
         }
     }

@@ -830,6 +830,22 @@ li {
   }
 }
 
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=repo");
+}
+
+.menu-accueil-container .menu .accueil__aide .menu-item-icone {
+  background-image: url("https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg");
+}
+
+.menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board");
+}
+
+.menu-accueil-container .menu .accueil__profs .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=people");
+}
+
 .menu-accueil-container .menu .menu-item {
   background: linear-gradient(45deg, #151c9e 5%, #fd541d 50%, #fda52a 100%);
   padding: 5px;
@@ -837,6 +853,7 @@ li {
   text-align: center;
   text-justify: auto;
   width: 200px;
+  height: fit-content;
   margin: 0 0 20px 0;
   list-style: none;
 }
@@ -851,6 +868,14 @@ li {
   color: white;
   font-size: 1rem;
   text-decoration: none;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid black;
+  width: 2rem;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .site__header {
