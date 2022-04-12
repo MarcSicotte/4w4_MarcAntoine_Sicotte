@@ -807,12 +807,24 @@ li {
 
 .menu-categorie_cours-container .menu .menu-item {
   text-align: center;
-  width: 90px;
+  width: 95px;
   margin: 0 15px;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: #1e2b9b;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #181263;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
   text-decoration: none;
+  color: white;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #ec740c;
 }
 
 /*

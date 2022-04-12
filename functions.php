@@ -115,26 +115,19 @@ function trouve_la_categorie($tableau){
 
   function cidw_4w4_pre_get_posts(WP_Query $query)
   { 
-    /*if (!is_admin() && is_main_query() && is_category(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'creation-3d', 'video')) ){
-      //var_dump($query);
-      //die(); 
-      $ordre = get_query_var('ordre');
-      $cle = get_query_var('cletre');
-      $query->set('order', 'asc');
-      $query->set('orderby', 'title');
-      $query->set('postperpage','-1');
+    
 
-    } */
-
-    if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    if (!is_admin() || is_main_query() || is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    {
+      return $query;
+    }
+    else
     {
       $ordre = get_query_var('ordre');
       $cle = get_query_var('cletri');
       $query->set('posts_per_page', -1);
       $query->set('orderby', $cle);
       $query->set('order',  $ordre);
-      // var_dump($query);
-      // die();
     }
   } 
     function cidw_4w4_query_vars($params){
@@ -142,17 +135,11 @@ function trouve_la_categorie($tableau){
       $params[] = "cletri";
       return $params;
 
-        /*$params[] = "cletri";
-        $params[] = "ordre";
-        //$params["cletri"] = "title";
-        //var_dump($params); die();
-        return $params;*/
+       
     } 
     add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
-    /* Manifestation du hook pre_get_post avant que la requête WP_query soit exécuté.
-      Ce hook nous permettera d'adapter la requête avant de l'exécuter */
-
-
+    //Que le hook «pre_get_posts» se manifest avant l'éxécution de la requête WP_query.
+    //Ce hoo permet d'adapter la requête avant qu'elle soit exécuter.
     add_filter('query_vars', 'cidw_4w4_query_vars' );
   
 ?>

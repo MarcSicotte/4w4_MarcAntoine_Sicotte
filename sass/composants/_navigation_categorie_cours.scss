@@ -9,13 +9,27 @@
     .menu{ //ul
         display: flex;
         list-style-type: none;
+
+
         .menu-item{ //li
             text-align: center;
-            width: 90px;
+            width: 95px;
             margin: 0 15px;
+            padding: 4px;
+            border-radius: 10px;
+            background-color:  $color__bouton__background;
+            &:hover {
+                background-color: $color__bouton__background--hover;
+            }
             a{
                 text-decoration: none;
+                color: white;
+                
+
             }
+        }
+        .current-menu-item{
+            background-color: $color__bouton__background--current;
         }
     }
 }
