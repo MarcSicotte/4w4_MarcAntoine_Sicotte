@@ -33,3 +33,16 @@
         }
     }
 }
+
+.filtre{
+    width: 100%;
+    display: flex;
+    margin-left: 4%;
+    margin-right: auto;
+    align-items: center;
+    a{
+        text-decoration: none;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+}
