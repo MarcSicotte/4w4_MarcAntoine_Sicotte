@@ -830,19 +830,19 @@ li {
   }
 }
 
-.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container .menu #menu-item-112 a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=repo");
 }
 
-.menu-accueil-container .menu .accueil__aide .menu-item-icone {
-  background-image: url("https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg");
+.menu-accueil-container .menu #menu-item-134 a .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=live_help");
 }
 
-.menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
+.menu-accueil-container .menu #menu-item-122 a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board");
 }
 
-.menu-accueil-container .menu .accueil__profs .menu-item-icone {
+.menu-accueil-container .menu #menu-item-123 a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=people");
 }
 
@@ -852,10 +852,21 @@ li {
   border-radius: 10px;
   text-align: center;
   text-justify: auto;
+  justify-content: center;
   width: 200px;
-  height: fit-content;
+  height: 200px;
   margin: 0 0 20px 0;
   list-style: none;
+}
+
+.menu-accueil-container .menu .menu-item:hover :nth-child(3) {
+  animation-name: grossissementIcone;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.menu-accueil-container .menu .menu-item:hover {
+  background: linear-gradient(225deg, #151c9e 5%, #fd541d 50%, #fda52a 100%);
 }
 
 @media screen and (min-width: 600px) {
@@ -868,14 +879,39 @@ li {
   color: white;
   font-size: 1rem;
   text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-accueil-container .menu .menu-item a:hover {
+  font-weight: bold;
+}
+
+.menu-accueil-container .menu .menu-item a hr {
+  width: 95%;
+  margin-bottom: 10px;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone {
-  border: 1px solid black;
+  margin-top: auto;
+  margin-bottom: 20px;
   width: 2rem;
-  height: fit-content;
+  height: 2rem;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+}
+
+@keyframes grossissementIcone {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .site__header {
