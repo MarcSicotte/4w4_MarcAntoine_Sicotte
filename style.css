@@ -839,40 +839,57 @@ li {
   text-decoration: none;
   margin-right: 6px;
   margin-left: 6px;
+  color: black;
+}
+
+.filtre a:hover {
+  color: #191970;
 }
 
 /*
     NAVIGATION POUR LA PAGE FRONT-PAGE.PHP
 */
-.menu-accueil-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 @media screen and (min-width: 600px) {
-  .menu-accueil-container .menu {
+  .menu-accueil-container .menu, .menu-evenement-container .menu {
     flex-direction: row;
   }
 }
 
-.menu-accueil-container .menu #menu-item-112 a .menu-item-icone {
+.menu-accueil-container .menu #menu-item-112 a .menu-item-icone, .menu-evenement-container .menu #menu-item-112 a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=repo");
 }
 
-.menu-accueil-container .menu #menu-item-134 a .menu-item-icone {
+.menu-accueil-container .menu #menu-item-134 a .menu-item-icone, .menu-evenement-container .menu #menu-item-134 a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=live_help");
 }
 
-.menu-accueil-container .menu #menu-item-122 a .menu-item-icone {
+.menu-accueil-container .menu #menu-item-122 a .menu-item-icone, .menu-evenement-container .menu #menu-item-122 a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board");
 }
 
-.menu-accueil-container .menu #menu-item-123 a .menu-item-icone {
+.menu-accueil-container .menu #menu-item-123 a .menu-item-icone, .menu-evenement-container .menu #menu-item-123 a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=people");
 }
 
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .accueil__porte a .menu-item-icone, .menu-evenement-container .menu .accueil__porte a .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=office-building");
+}
+
+.menu-accueil-container .menu .accueil__projet a .menu-item-icone, .menu-evenement-container .menu .accueil__projet a .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=star");
+}
+
+.menu-accueil-container .menu .accueil__journee a .menu-item-icone, .menu-evenement-container .menu .accueil__journee a .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=smiley");
+}
+
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   background: linear-gradient(45deg, #151c9e 5%, #fd541d 50%, #fda52a 100%);
   padding: 5px;
   border-radius: 10px;
@@ -885,23 +902,23 @@ li {
   list-style: none;
 }
 
-.menu-accueil-container .menu .menu-item:hover :nth-child(3) {
+.menu-accueil-container .menu .menu-item:hover :nth-child(3), .menu-evenement-container .menu .menu-item:hover :nth-child(3) {
   animation-name: grossissementIcone;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
 
-.menu-accueil-container .menu .menu-item:hover {
+.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
   background: linear-gradient(225deg, #151c9e 5%, #fd541d 50%, #fda52a 100%);
 }
 
 @media screen and (min-width: 600px) {
-  .menu-accueil-container .menu .menu-item {
+  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
     margin: 0 30px;
   }
 }
 
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
   color: white;
   font-size: 1rem;
   text-decoration: none;
@@ -912,16 +929,17 @@ li {
   align-items: center;
 }
 
-.menu-accueil-container .menu .menu-item a:hover {
-  font-weight: bold;
+.menu-accueil-container .menu .menu-item a:hover, .menu-evenement-container .menu .menu-item a:hover {
+  font-weight: bolder;
+  font-size: 1.05rem;
 }
 
-.menu-accueil-container .menu .menu-item a hr {
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
   width: 95%;
   margin-bottom: 10px;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
   margin-top: auto;
   margin-bottom: 20px;
   width: 2rem;

@@ -44,5 +44,10 @@
         text-decoration: none;
         margin-right: 6px;
         margin-left: 6px;
+        color: black;
+
+        &:hover{
+            color: $color__link-hover;
+        }
     }
 }

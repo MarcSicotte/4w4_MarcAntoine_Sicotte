@@ -17,6 +17,12 @@
     
     ?>
 
+<?php wp_nav_menu(array(
+        "menu" => "evenement",
+        "container" => "nav" ));
+    
+    ?>
+
 
 
     <?php if (have_posts()):the_post()?>

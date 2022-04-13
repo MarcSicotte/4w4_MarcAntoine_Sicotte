@@ -2,7 +2,7 @@
     NAVIGATION POUR LA PAGE FRONT-PAGE.PHP
 */
 
-.menu-accueil-container{ //nav
+.menu-accueil-container, .menu-evenement-container{ //nav
     .menu{ //ul
         display: flex;
         flex-direction: column;
@@ -28,8 +28,22 @@
         #menu-item-123 a .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=people");
         }
+
+        .accueil__porte a .menu-item-icone{
+
+            background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=office-building");
+
+        }
+
+        .accueil__projet a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=star");
+        }
+
+        .accueil__journee a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=smiley");
+        }
         .menu-item{ //li
-            background: linear-gradient(45deg, rgba(21,28,158,1) 5%, rgba(253,84,29,1) 50%, rgba(253,165,42,1) 100%);
+            background: $color__menu__accueil__background;
             padding: 5px;
             border-radius: 10px;
             text-align: center;
@@ -51,7 +65,7 @@
             }
 
             &:hover{
-                background: linear-gradient(225deg, rgba(21,28,158,1) 5%, rgba(253,84,29,1) 50%, rgba(253,165,42,1) 100%);
+                background: $color__menu__accueil__background--hover;
                 
             }
             
@@ -71,7 +85,8 @@
                 align-items: center;
 
                 &:hover{
-                    font-weight: bold;
+                    font-weight: bolder;
+                    font-size: 1.05rem;
                 }
 
                
